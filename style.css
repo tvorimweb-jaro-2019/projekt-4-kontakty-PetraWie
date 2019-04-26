@@ -7,4 +7,161 @@ body {
 	font-size: 14px;
 }
 
-/* ---------------------------------------------------- */
+/* problémy: 1. stín u boxu se mi nastavuje kolem dokola a ne jen na spodní části ---------------------------------------------------- */
+
+@media (min-width: 200px) {
+	.kontejner {
+	display: inline-flex;
+    /* flex-wrap: wrap; */
+    max-width: 100%;
+    flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;	
+	}
+
+
+	.foto {
+	border-radius: 50%;
+	}
+
+	.jarmilab, .klotyldau, .luciek, .lucindau {
+	/* flex-basis: 25%; */
+	/* flex-basis: calc(100 / 4); */
+	border: 2px solid lightgrey;
+	box-shadow:  0 0 5px 0 aquamarine;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	}
+
+
+	/* .klotyldau {
+	flex-basis: 25%;
+	border: 2px solid lightgrey;
+	box-shadow: 0px 0px 2px 0px aquamarine;
+	border-radius: 7%;
+	text-align: center;
+	padding: 10px;
+	}
+
+	.luciek {
+	flex-basis: 25%;
+	border: 2px solid lightgrey;
+	box-shadow: 0px 0px 2px 0px aquamarine;
+	border-radius: 7%;
+	text-align: center;
+	padding: 10px;
+	}
+
+	.lucindau {
+	flex-basis: 25%;
+	border: 2px solid lightgrey;
+	box-shadow: 0px 0px 2px 0px aquamarine;
+	border-radius: 7%;
+	text-align: center;
+	padding: 10px;
+	}  */
+}
+
+@media (min-width: 540px){
+	.kontejner {
+	display: inline-flex;
+	/* flex-basis: calc(100 / 2); */
+	flex-wrap: wrap;  
+	width: 100%; 
+    max-width: 959px;
+    flex-direction: row;
+	justify-content: space-between;
+	/* align-items: stretch;  */
+	}
+
+	.foto {
+	border-radius: 50%;
+	}
+
+	.jarmilab {
+	justify-content: flex-start; 
+	/* flex-basis: 50%; 
+	/* flex-grow: 1; */
+	width: 50%;
+	height: auto;
+	border: 2px solid lightgrey;
+	box-shadow: bottom 10px aquamarine;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	}
+
+	.klotyldau {
+	justify-content: flex-start;
+	/* flex-basis: 50%; */
+	/* flex-shrink: auto; */
+	width: 50%;
+	height: auto;
+	border: 2px solid lightgrey;
+	box-shadow: bottom 10px aquamarine;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	}
+
+	.luciek {
+	justify-content: flex-end;
+	/* flex-basis: 50%;  */
+	width: 50%;
+	height: auto;
+	border: 2px solid lightgrey;
+	box-shadow: bottom 10px aquamarine;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	}
+
+	.lucindau {
+	justify-content: flex-end;
+	/* flex-basis: 50%;  */
+	width: 50%;
+	height: auto;
+	border: 2px solid lightgrey;
+	box-shadow: bottom 10px aquamarine;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	}
+
+
+@media (min-width: 960px){
+	.kontejner {
+	flex-basis: calc(100 / 4);
+	display: flex;
+    flex-wrap: nowrap; 
+	max-width: 100%;
+	max-height: 100%;
+    flex-direction: row;
+	justify-content: flex-start;
+	/* align-items: stretch; */
+	}
+
+	.foto {
+	border-radius: 50%;
+	}
+
+	.jarmilab, .klotyldau, .luciek, .lucindau {
+	width: 25%;
+	height: auto;
+	border: 2px solid lightgrey;
+	box-shadow: bottom 10px aquamarine;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	}
+}
+
+
+}
