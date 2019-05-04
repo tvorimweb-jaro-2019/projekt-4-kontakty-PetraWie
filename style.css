@@ -9,9 +9,9 @@ body {
 
 /* problémy: 1. stín u boxu se mi nastavuje kolem dokola a ne jen na spodní části ---------------------------------------------------- */
 
-@media (min-width: 200px) {
+@media  {
 	.kontejner {
-	display: inline-flex;
+	display: flex;
     /* flex-wrap: wrap; */
     max-width: 100%;
     flex-direction: column;
@@ -28,7 +28,7 @@ body {
 	/* flex-basis: 25%; */
 	/* flex-basis: calc(100 / 4); */
 	border: 2px solid lightgrey;
-	box-shadow:  0 0 5px 0 aquamarine;
+	box-shadow:  0 4px 2px -2px aquamarine;
 	border-radius: 10px;
 	text-align: center;
 	padding: 10px;
@@ -66,11 +66,11 @@ body {
 
 @media (min-width: 540px){
 	.kontejner {
-	display: inline-flex;
+	display: flex;
 	/* flex-basis: calc(100 / 2); */
 	flex-wrap: wrap;  
 	width: 100%; 
-    max-width: 959px;
+    max-width: 960px;
     flex-direction: row;
 	justify-content: space-between;
 	/* align-items: stretch;  */
@@ -84,7 +84,7 @@ body {
 	justify-content: flex-start; 
 	/* flex-basis: 50%; 
 	/* flex-grow: 1; */
-	width: 50%;
+	width: calc(50% - 20px);
 	height: auto;
 	border: 2px solid lightgrey;
 	box-shadow: bottom 10px aquamarine;
@@ -95,10 +95,11 @@ body {
 	}
 
 	.klotyldau {
+	display: flex;
 	justify-content: flex-start;
 	/* flex-basis: 50%; */
 	/* flex-shrink: auto; */
-	width: 50%;
+	width: calc(50% - 20px);
 	height: auto;
 	border: 2px solid lightgrey;
 	box-shadow: bottom 10px aquamarine;
@@ -111,7 +112,7 @@ body {
 	.luciek {
 	justify-content: flex-end;
 	/* flex-basis: 50%;  */
-	width: 50%;
+	width: calc(50% - 20px);
 	height: auto;
 	border: 2px solid lightgrey;
 	box-shadow: bottom 10px aquamarine;
@@ -124,7 +125,7 @@ body {
 	.lucindau {
 	justify-content: flex-end;
 	/* flex-basis: 50%;  */
-	width: 50%;
+	width: calc(50% - 20px);
 	height: auto;
 	border: 2px solid lightgrey;
 	box-shadow: bottom 10px aquamarine;
